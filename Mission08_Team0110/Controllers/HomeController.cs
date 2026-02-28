@@ -61,6 +61,25 @@ public class HomeController : Controller
         
         return View("Create", recordToEdit);
     }
+
+    [HttpPost]
+    public IActionResult Edit(TaskItem updatedRecord)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Tasks.Update(updatedRecord);
+            _context.SaveChanges();
+            return RedirectToAction("Quadrants");
+        }
+        else
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(c => c.Name)
+                .ToList();
+            
+            return View("Create", updatedRecord);
+        }
+    }
     public IActionResult Quadrants()
     {
         var incompleteTasks = _context.Tasks
@@ -68,8 +87,31 @@ public class HomeController : Controller
             .Include(x => x.Category)
             .ToList();
         
-        
-        
         return View(incompleteTasks);
+    }
+
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var recordToDelete = _context.Tasks
+            .Single(x => x.TaskId == id);
+
+        _context.Tasks.Remove(recordToDelete);
+        _context.SaveChanges();
+        
+        return RedirectToAction("Quadrants");
+    }
+
+    [HttpGet]
+    public IActionResult MarkComplete(int id)
+    {
+        var recordToComplete = _context.Tasks
+            .Single(x => x.TaskId == id);
+        
+        recordToComplete.Completed = true;
+        _context.Tasks.Update(recordToComplete);
+        _context.SaveChanges();
+        
+        return RedirectToAction("Quadrants");
     }
 }

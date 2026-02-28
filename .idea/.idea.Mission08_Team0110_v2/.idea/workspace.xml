@@ -10,8 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="94e4f3ce-f462-49a7-b782-c6f1ffafb2c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0110_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0110_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission08_Team0110/Models/TaskItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission08_Team0110/Models/TaskItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission08_Team0110/Views/Home/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Mission08_Team0110/Views/Home/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mission08_Team0110/mission08.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Mission08_Team0110/mission08.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9d2f95d72fa884d8b6ddefc717c56da3657fbb2d5fb683656c3589eb6587/Debugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Mission08_Team0110/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Mission08_Team0110/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
@@ -114,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772236912379</updated>
       <workItem from="1772236913434" duration="1869000" />
-      <workItem from="1772238804807" duration="10801000" />
+      <workItem from="1772238804807" duration="12138000" />
     </task>
     <servers />
   </component>
@@ -141,71 +142,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="843" />
-            </startOffsets>
-            <endOffsets>
-              <option value="880" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>47</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1081" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1103" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>61</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Edit'">
-            <startOffsets>
-              <option value="1387" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1423" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>72</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Quadrants'">
-            <startOffsets>
-              <option value="1660" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1689" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>34</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="706" />
-            </startOffsets>
-            <endOffsets>
-              <option value="729" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
