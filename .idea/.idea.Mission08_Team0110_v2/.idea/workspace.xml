@@ -9,7 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e4f3ce-f462-49a7-b782-c6f1ffafb2c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mission08_Team0110/Views/Home/Quadrants.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0110_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mission08_Team0110_v2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772236912379</updated>
       <workItem from="1772236913434" duration="1869000" />
-      <workItem from="1772238804807" duration="6418000" />
+      <workItem from="1772238804807" duration="7101000" />
     </task>
     <servers />
   </component>
@@ -139,19 +140,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs</url>
-          <line>26</line>
-          <properties documentPath="$PROJECT_DIR$/Mission08_Team0110/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="543" />
-            </startOffsets>
-            <endOffsets>
-              <option value="571" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

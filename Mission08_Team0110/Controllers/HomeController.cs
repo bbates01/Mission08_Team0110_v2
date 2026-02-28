@@ -41,6 +41,6 @@ public class HomeController : Controller
     }
     public IActionResult Quadrants()
     {
-        return View(new List<TaskItem>());
+        return View();
     }
 }
