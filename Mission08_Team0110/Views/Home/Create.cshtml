@@ -33,7 +33,7 @@
                         </div>
                     }
 
-                    <form asp-action="Create" asp-method="POST">
+                    <form asp-action="@(isEdit ? "Edit" : "Create")" asp-method="POST">
 
                         @if (isEdit)
                         {

@@ -61,6 +61,25 @@ public class HomeController : Controller
         
         return View("Create", recordToEdit);
     }
+
+    [HttpPost]
+    public IActionResult Edit(TaskItem updatedRecord)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Tasks.Update(updatedRecord);
+            _context.SaveChanges();
+            return RedirectToAction("Quadrants");
+        }
+        else
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(c => c.Name)
+                .ToList();
+            
+            return View("Create", updatedRecord);
+        }
+    }
     public IActionResult Quadrants()
     {
         var incompleteTasks = _context.Tasks
