@@ -27,6 +27,26 @@ public class HomeController : Controller
         return View(new TaskItem());
     }
 
+    [HttpPost]
+    public IActionResult Create(TaskItem response)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Tasks.Add(response);
+            _context.SaveChanges();
+            
+            return RedirectToAction("Quadrants");
+        }
+        else // invalid data entered
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(x => x.Name)
+                .ToList();
+            
+            return View(response);
+        }
+    }
+
     [HttpGet]
     public IActionResult Edit(int id)
     {
@@ -41,6 +61,10 @@ public class HomeController : Controller
     }
     public IActionResult Quadrants()
     {
-        return View();
+        var incompleteTasks = _context.Tasks
+            .Where(x => x.Completed == false)
+            .ToList();
+        
+        return View(incompleteTasks);
     }
 }

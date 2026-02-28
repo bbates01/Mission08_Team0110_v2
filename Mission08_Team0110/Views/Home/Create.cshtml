@@ -34,9 +34,12 @@
 
                         <div class="mb-3">
                             <label asp-for="CategoryId" class="form-label">Category</label>
-                            <select asp-for="CategoryId" class="form-select"
-                                    asp-items="@(ViewBag.Categories as SelectList)">
+                            <select asp-for="CategoryId" class="form-select">
                                 <option value="">-- Select a Category --</option>
+                                @foreach (Category c in ViewBag.Categories)
+                                {
+                                    <option value=@c.CategoryId>@c.Name</option>
+                                }
                             </select>
                         </div>
 
